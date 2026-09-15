@@ -1,0 +1,22 @@
+{
+  "imports": { "total": 0, "resolved": 0, "external": 0 },
+  "exports": { "total": 2, "resolved": 2 },
+  "calls": {
+    "total": 1,
+    "resolved": 1,
+    "noEnclosingSymbol": 0,
+    "byCategory": {
+      "sameFile": { "total": 1, "resolved": 1 },
+      "imported": { "total": 0, "resolved": 0 },
+      "method": { "total": 0, "resolved": 0 },
+      "dynamic": { "total": 0, "resolved": 0 },
+      "builtin": { "total": 0, "resolved": 0 }
+    }
+  },
+  "testedBy": { "direct": 0, "indirect": 0 },
+  "sampleRelationships": [
+    { "type": "EXPORTS", "from": "same-file", "to": "helper" },
+    { "type": "EXPORTS", "from": "same-file", "to": "main" },
+    { "type": "CALLS", "from": "main", "to": "helper" }
+  ]
+}

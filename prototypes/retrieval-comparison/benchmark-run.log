@@ -1,0 +1,40 @@
+
+=== commander.js ===
+  kw cQ1a (exact) P@1=1.00 R@10=1.00 27.8ms
+  kw cQ1b (conceptual) P@1=0.00 R@10=1.00 34.9ms
+  kw cQ1c (conceptual) P@1=0.00 R@10=0.00 27.0ms
+  kw cQ1d (exact) P@1=1.00 R@10=1.00 28.3ms
+  kw cQ7a (conceptual) P@1=0.00 R@10=0.50 26.5ms
+  kw cQ7b (conceptual) P@1=0.00 R@10=1.00 28.3ms
+  kw cQ9a (exact) P@1=1.00 R@10=1.00 26.3ms
+  kw cQ9b (conceptual) P@1=0.00 R@10=1.00 23.4ms
+  sm cQ1a (exact) P@1=1.00 R@10=1.00 20.4ms
+  sm cQ1b (conceptual) P@1=0.00 R@10=1.00 23.1ms
+  sm cQ1c (conceptual) P@1=0.00 R@10=1.00 12.5ms
+  sm cQ1d (exact) P@1=1.00 R@10=1.00 13.9ms
+  sm cQ7a (conceptual) P@1=0.00 R@10=1.00 16.1ms
+  sm cQ7b (conceptual) P@1=0.00 R@10=1.00 14.9ms
+  sm cQ9a (exact) P@1=1.00 R@10=1.00 13.5ms
+  sm cQ9b (conceptual) P@1=0.00 R@10=1.00 13.6ms
+
+=== date-fns ===
+  kw dQ1a (exact) P@1=0.00 R@10=1.00 148.1ms
+  kw dQ1b (conceptual) P@1=1.00 R@10=1.00 125.8ms
+  kw dQ1c (conceptual) P@1=0.00 R@10=0.00 112.5ms
+  kw dQ1d (exact) P@1=0.00 R@10=1.00 131.4ms
+  kw dQ7a (exact) P@1=0.00 R@10=1.00 122.8ms
+  kw dQ7b (conceptual) P@1=0.00 R@10=1.00 115.3ms
+  kw dQ7c (conceptual) P@1=1.00 R@10=1.00 127.2ms
+  kw dQ9a (conceptual) P@1=0.00 R@10=1.00 105.1ms
+  kw dQ9b (exact) P@1=0.00 R@10=0.00 124.4ms
+  sm dQ1a (exact) P@1=0.00 R@10=1.00 80.8ms
+  sm dQ1b (conceptual) P@1=0.00 R@10=1.00 69.2ms
+  sm dQ1c (conceptual) P@1=0.00 R@10=1.00 66.5ms
+  sm dQ1d (exact) P@1=0.00 R@10=0.00 88.5ms
+  sm dQ7a (exact) P@1=0.00 R@10=1.00 69.9ms
+  sm dQ7b (conceptual) P@1=0.00 R@10=0.00 109.1ms
+  sm dQ7c (conceptual) P@1=0.00 R@10=0.00 81.1ms
+  sm dQ9a (conceptual) P@1=0.00 R@10=0.00 87.3ms
+  sm dQ9b (exact) P@1=0.00 R@10=1.00 83.0ms
+
+Wrote results.md

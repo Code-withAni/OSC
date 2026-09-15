@@ -1,0 +1,9 @@
+Benchmarking commander.js...
+  158 files, 518ms, 19.1MB delta
+  imports 134/135 in-repo, calls 603/8309 resolved
+Benchmarking date-fns...
+  1641 files, 2898ms, 24.9MB delta
+  imports 3831/3835 in-repo, calls 7220/24961 resolved
+
+Wrote results.md (8226 bytes)
+done

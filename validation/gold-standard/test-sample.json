@@ -1,0 +1,146 @@
+{
+  "file": "./benchmarks/test-sample.ts",
+  "expected": {
+    "symbols": [
+      {
+        "name": "Config",
+        "kind": "interface",
+        "line": 4,
+        "expected": true,
+        "actual": false,
+        "notes": "Interface declaration"
+      },
+      {
+        "name": "FileManager",
+        "kind": "class",
+        "line": 9,
+        "expected": true,
+        "actual": false,
+        "notes": "Class declaration"
+      },
+      {
+        "name": "constructor",
+        "kind": "method",
+        "line": 12,
+        "expected": true,
+        "actual": false,
+        "notes": "Class constructor"
+      },
+      {
+        "name": "readConfig",
+        "kind": "method",
+        "line": 16,
+        "expected": true,
+        "actual": false,
+        "notes": "Async method"
+      },
+      {
+        "name": "getPath",
+        "kind": "method",
+        "line": 21,
+        "expected": true,
+        "actual": false,
+        "notes": "Regular method"
+      },
+      {
+        "name": "calculateSum",
+        "kind": "function",
+        "line": 26,
+        "expected": true,
+        "actual": false,
+        "notes": "Regular function"
+      },
+      {
+        "name": "processFile",
+        "kind": "function",
+        "line": 31,
+        "expected": true,
+        "actual": false,
+        "notes": "Async function"
+      }
+    ],
+    "imports": [
+      {
+        "specifier": "fs/promises",
+        "names": ["readFile"],
+        "line": 2
+      },
+      {
+        "specifier": "path",
+        "names": ["join"],
+        "line": 3
+      }
+    ],
+    "exports": [
+      {
+        "name": "Config",
+        "type": "named",
+        "line": 4
+      },
+      {
+        "name": "FileManager",
+        "type": "named",
+        "line": 9
+      },
+      {
+        "name": "calculateSum",
+        "type": "named",
+        "line": 26
+      },
+      {
+        "name": "processFile",
+        "type": "named",
+        "line": 31
+      }
+    ],
+    "calls": [
+      {
+        "called": "readFile",
+        "line": 17,
+        "context": "Method call"
+      },
+      {
+        "called": "join",
+        "line": 17,
+        "context": "Method call"
+      },
+      {
+        "called": "JSON.parse",
+        "line": 18,
+        "context": "Static method call"
+      },
+      {
+        "called": "join",
+        "line": 22,
+        "context": "Method call"
+      },
+      {
+        "called": "FileManager",
+        "line": 32,
+        "context": "Constructor call"
+      },
+      {
+        "called": "manager.readConfig",
+        "line": 33,
+        "context": "Method call on instance"
+      },
+      {
+        "called": "console.log",
+        "line": 34,
+        "context": "Static method call"
+      }
+    ],
+    "todos": [
+      {
+        "type": "TODO",
+        "text": "Add error handling",
+        "line": 30
+      },
+      {
+        "type": "FIXME",
+        "text": "This is inefficient",
+        "line": 38
+      }
+    ]
+  }
+}

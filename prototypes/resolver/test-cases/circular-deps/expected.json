@@ -1,0 +1,23 @@
+{
+  "imports": { "total": 2, "resolved": 2, "external": 0 },
+  "exports": { "total": 4, "resolved": 4 },
+  "calls": {
+    "total": 3,
+    "resolved": 1,
+    "noEnclosingSymbol": 0,
+    "byCategory": {
+      "sameFile": { "total": 0, "resolved": 0 },
+      "imported": { "total": 1, "resolved": 1 },
+      "method": { "total": 2, "resolved": 0 },
+      "dynamic": { "total": 0, "resolved": 0 },
+      "builtin": { "total": 0, "resolved": 0 }
+    }
+  },
+  "testedBy": { "direct": 0, "indirect": 0 },
+  "errors": { "expected": 2 },
+  "sampleRelationships": [
+    { "type": "IMPORTS", "from": "a.js", "to": "b.js" },
+    { "type": "IMPORTS", "from": "b.js", "to": "a.js" },
+    { "type": "CALLS", "from": "processA", "to": "processB" }
+  ]
+}

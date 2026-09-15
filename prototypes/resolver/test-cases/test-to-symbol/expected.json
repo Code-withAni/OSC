@@ -1,0 +1,25 @@
+{
+  "imports": { "total": 1, "resolved": 1, "external": 0 },
+  "exports": { "total": 3, "resolved": 3 },
+  "calls": {
+    "total": 11,
+    "resolved": 5,
+    "noEnclosingSymbol": 0,
+    "byCategory": {
+      "sameFile": { "total": 2, "resolved": 2 },
+      "imported": { "total": 3, "resolved": 3 },
+      "method": { "total": 3, "resolved": 0 },
+      "dynamic": { "total": 0, "resolved": 0 },
+      "builtin": { "total": 3, "resolved": 0 }
+    }
+  },
+  "testedBy": { "direct": 3, "indirect": 2 },
+  "sampleRelationships": [
+    { "type": "IMPORTS", "from": "source.test.js", "to": "source.js" },
+    { "type": "CALLS", "from": "calculate", "to": "add" },
+    { "type": "CALLS", "from": "calculate", "to": "multiply" },
+    { "type": "TESTED_BY", "from": "add", "to": "adds numbers" },
+    { "type": "TESTED_BY", "from": "multiply", "to": "multiplies numbers" },
+    { "type": "TESTED_BY", "from": "calculate", "to": "calculates combined result" }
+  ]
+}

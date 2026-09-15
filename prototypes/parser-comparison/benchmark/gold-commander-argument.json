@@ -1,0 +1,26 @@
+{
+  "repo": "commander.js",
+  "commitSha": "ba6d13ddb4243e5913367734f8c159089ffe7834",
+  "file": "lib/argument.js",
+  "expected": {
+    "symbols": [
+      { "name": "Argument", "kind": "class", "startLine": 3, "exported": true },
+      { "name": "constructor", "kind": "method", "startLine": 13, "exported": false },
+      { "name": "name", "kind": "method", "startLine": 48, "exported": false },
+      { "name": "_collectValue", "kind": "method", "startLine": 56, "exported": false },
+      { "name": "default", "kind": "method", "startLine": 73, "exported": false },
+      { "name": "argParser", "kind": "method", "startLine": 86, "exported": false },
+      { "name": "choices", "kind": "method", "startLine": 98, "exported": false },
+      { "name": "argRequired", "kind": "method", "startLine": 119, "exported": false },
+      { "name": "argOptional", "kind": "method", "startLine": 129, "exported": false },
+      { "name": "humanReadableArgName", "kind": "function", "startLine": 143, "exported": true }
+    ],
+    "imports": [
+      { "specifier": "./error.js", "names": ["InvalidArgumentError"], "line": 1 }
+    ],
+    "exports": [
+      { "name": "Argument", "type": "named" },
+      { "name": "humanReadableArgName", "type": "named" }
+    ]
+  }
+}

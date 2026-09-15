@@ -1,0 +1,53 @@
+[
+  {
+    "parserId": "TypeScript Compiler API",
+    "files": 1624,
+    "symbols": 4263,
+    "methods": 139,
+    "functions": 871,
+    "classes": 44,
+    "interfaces": 267,
+    "imports": 4505,
+    "exports": 1607,
+    "calls": 22449,
+    "todos": 33,
+    "tests": 3970,
+    "errors": 0,
+    "parseTimeMs": 3463,
+    "memoryMB": 10.839073181152344
+  },
+  {
+    "parserId": "Babel",
+    "files": 1624,
+    "symbols": 4260,
+    "methods": 140,
+    "functions": 864,
+    "classes": 44,
+    "interfaces": 267,
+    "imports": 4505,
+    "exports": 1600,
+    "calls": 24572,
+    "todos": 28,
+    "tests": 3970,
+    "errors": 0,
+    "parseTimeMs": 5128,
+    "memoryMB": -17.891761779785156
+  },
+  {
+    "parserId": "Regex (baseline)",
+    "files": 1624,
+    "symbols": 1478,
+    "methods": 0,
+    "functions": 1153,
+    "classes": 53,
+    "interfaces": 272,
+    "imports": 4442,
+    "exports": 1583,
+    "calls": 0,
+    "todos": 14,
+    "tests": 0,
+    "errors": 0,
+    "parseTimeMs": 1372,
+    "memoryMB": 3.7601242065429688
+  }
+]

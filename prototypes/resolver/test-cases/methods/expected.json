@@ -1,0 +1,23 @@
+{
+  "imports": { "total": 0, "resolved": 0, "external": 0 },
+  "exports": { "total": 1, "resolved": 1 },
+  "calls": {
+    "total": 3,
+    "resolved": 2,
+    "noEnclosingSymbol": 0,
+    "byCategory": {
+      "sameFile": { "total": 0, "resolved": 0 },
+      "imported": { "total": 0, "resolved": 0 },
+      "method": { "total": 3, "resolved": 2 },
+      "dynamic": { "total": 0, "resolved": 0 },
+      "builtin": { "total": 0, "resolved": 0 }
+    }
+  },
+  "testedBy": { "direct": 0, "indirect": 0 },
+  "errors": { "expected": 1 },
+  "sampleRelationships": [
+    { "type": "EXPORTS", "from": "methods", "to": "Calculator" },
+    { "type": "CALLS", "from": "add", "to": "getValue" },
+    { "type": "CALLS", "from": "clone", "to": "getValue" }
+  ]
+}

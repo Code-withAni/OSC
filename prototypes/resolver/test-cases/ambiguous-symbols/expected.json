@@ -1,0 +1,24 @@
+{
+  "imports": { "total": 2, "resolved": 2, "external": 0 },
+  "exports": { "total": 4, "resolved": 2 },
+  "calls": {
+    "total": 4,
+    "resolved": 2,
+    "noEnclosingSymbol": 0,
+    "byCategory": {
+      "sameFile": { "total": 0, "resolved": 0 },
+      "imported": { "total": 2, "resolved": 2 },
+      "method": { "total": 2, "resolved": 0 },
+      "dynamic": { "total": 0, "resolved": 0 },
+      "builtin": { "total": 0, "resolved": 0 }
+    }
+  },
+  "testedBy": { "direct": 0, "indirect": 0 },
+  "errors": { "expected": 4 },
+  "sampleRelationships": [
+    { "type": "EXPORTS", "from": "date-utils.js", "to": "format" },
+    { "type": "EXPORTS", "from": "currency-utils.js", "to": "format" },
+    { "type": "IMPORTS", "from": "index.js", "to": "date-utils.js" },
+    { "type": "CALLS", "from": "d", "to": "format" }
+  ]
+}

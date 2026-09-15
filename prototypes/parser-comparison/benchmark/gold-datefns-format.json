@@ -1,0 +1,29 @@
+{
+  "repo": "date-fns",
+  "commitSha": "18cbd436f1428d0f45f89f710df65f62546c42f0",
+  "file": "pkgs/core/src/format/index.ts",
+  "expected": {
+    "symbols": [
+      { "name": "FormatOptions", "kind": "interface", "startLine": 54, "exported": true },
+      { "name": "format", "kind": "function", "startLine": 346, "exported": true },
+      { "name": "cleanEscapedString", "kind": "function", "startLine": 444, "exported": false }
+    ],
+    "imports": [
+      { "specifier": "../_lib/defaultLocale/index.ts", "names": ["defaultLocale"], "line": 1 },
+      { "specifier": "../_lib/defaultOptions/index.ts", "names": ["getDefaultOptions"], "line": 2 },
+      { "specifier": "../_lib/format/formatters/index.ts", "names": ["formatters"], "line": 3 },
+      { "specifier": "../_lib/format/longFormatters/index.ts", "names": ["longFormatters"], "line": 4 },
+      { "specifier": "../_lib/protectedTokens/index.ts", "names": ["isProtectedDayOfYearToken", "isProtectedWeekYearToken", "warnOrThrowProtectedError"], "line": 5 },
+      { "specifier": "../isValid/index.ts", "names": ["isValid"], "line": 10 },
+      { "specifier": "../toDate/index.ts", "names": ["toDate"], "line": 11 },
+      { "specifier": "../types.ts", "names": ["AdditionalTokensOptions", "ContextOptions", "DateArg", "FirstWeekContainsDateOptions", "FormatPart", "LocalizedOptions", "WeekOptions"], "line": 12, "note": "type-only import" }
+    ],
+    "exports": [
+      { "name": "formatters", "type": "named", "note": "re-export" },
+      { "name": "longFormatters", "type": "named", "note": "re-export" },
+      { "name": "formatDate", "type": "named", "note": "alias re-export of format" },
+      { "name": "FormatOptions", "type": "named" },
+      { "name": "format", "type": "named" }
+    ]
+  }
+}

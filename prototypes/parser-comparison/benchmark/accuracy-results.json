@@ -1,0 +1,174 @@
+{
+  "TypeScript Compiler API": {
+    "commander.js:lib/argument.js": {
+      "symbolScore": {
+        "precision": 1,
+        "recall": 1,
+        "matched": 10,
+        "extracted": 10,
+        "expectedTotal": 10,
+        "falsePositives": [],
+        "falseNegatives": []
+      },
+      "importScore": {
+        "precision": 1,
+        "recall": 1,
+        "matched": 1,
+        "extracted": 1,
+        "expectedTotal": 1,
+        "falsePositives": [],
+        "falseNegatives": []
+      },
+      "exportScore": {
+        "precision": 1,
+        "recall": 1,
+        "matched": 2,
+        "extracted": 2,
+        "expectedTotal": 2,
+        "falsePositives": [],
+        "falseNegatives": []
+      },
+      "methodScore": {
+        "precision": 1,
+        "recall": 1,
+        "matched": 8,
+        "extracted": 8,
+        "expectedTotal": 8
+      },
+      "callSites": 11,
+      "errors": 0
+    },
+    "date-fns:pkgs/core/src/format/index.ts": {
+      "symbolScore": {
+        "precision": 0.375,
+        "recall": 1,
+        "matched": 3,
+        "extracted": 8,
+        "expectedTotal": 3,
+        "falsePositives": [
+          "formattingTokensRegExp|const",
+          "longFormattingTokensRegExp|const",
+          "escapedStringRegExp|const",
+          "doubleQuoteRegExp|const",
+          "unescapedLatinCharacterRegExp|const"
+        ],
+        "falseNegatives": []
+      },
+      "importScore": {
+        "precision": 1,
+        "recall": 1,
+        "matched": 8,
+        "extracted": 8,
+        "expectedTotal": 8,
+        "falsePositives": [],
+        "falseNegatives": []
+      },
+      "exportScore": {
+        "precision": 0.8333333333333334,
+        "recall": 1,
+        "matched": 5,
+        "extracted": 6,
+        "expectedTotal": 5,
+        "falsePositives": [
+          "FormatDateOptions"
+        ],
+        "falseNegatives": []
+      },
+      "methodScore": {
+        "precision": 0,
+        "recall": 0,
+        "matched": 0,
+        "extracted": 0,
+        "expectedTotal": 0
+      },
+      "callSites": 21,
+      "errors": 0
+    }
+  },
+  "Babel": {
+    "commander.js:lib/argument.js": {
+      "symbolScore": {
+        "precision": 1,
+        "recall": 1,
+        "matched": 10,
+        "extracted": 10,
+        "expectedTotal": 10,
+        "falsePositives": [],
+        "falseNegatives": []
+      },
+      "importScore": {
+        "precision": 1,
+        "recall": 1,
+        "matched": 1,
+        "extracted": 1,
+        "expectedTotal": 1,
+        "falsePositives": [],
+        "falseNegatives": []
+      },
+      "exportScore": {
+        "precision": 1,
+        "recall": 1,
+        "matched": 2,
+        "extracted": 2,
+        "expectedTotal": 2,
+        "falsePositives": [],
+        "falseNegatives": []
+      },
+      "methodScore": {
+        "precision": 1,
+        "recall": 1,
+        "matched": 8,
+        "extracted": 8,
+        "expectedTotal": 8
+      },
+      "callSites": 11,
+      "errors": 0
+    },
+    "date-fns:pkgs/core/src/format/index.ts": {
+      "symbolScore": {
+        "precision": 0.375,
+        "recall": 1,
+        "matched": 3,
+        "extracted": 8,
+        "expectedTotal": 3,
+        "falsePositives": [
+          "formattingTokensRegExp|const",
+          "longFormattingTokensRegExp|const",
+          "escapedStringRegExp|const",
+          "doubleQuoteRegExp|const",
+          "unescapedLatinCharacterRegExp|const"
+        ],
+        "falseNegatives": []
+      },
+      "importScore": {
+        "precision": 1,
+        "recall": 1,
+        "matched": 8,
+        "extracted": 8,
+        "expectedTotal": 8,
+        "falsePositives": [],
+        "falseNegatives": []
+      },
+      "exportScore": {
+        "precision": 0.8333333333333334,
+        "recall": 1,
+        "matched": 5,
+        "extracted": 6,
+        "expectedTotal": 5,
+        "falsePositives": [
+          "FormatDateOptions"
+        ],
+        "falseNegatives": []
+      },
+      "methodScore": {
+        "precision": 0,
+        "recall": 0,
+        "matched": 0,
+        "extracted": 0,
+        "expectedTotal": 0
+      },
+      "callSites": 21,
+      "errors": 0
+    }
+  }
+}
