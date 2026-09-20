@@ -18,14 +18,38 @@ const path = require('path');
 const { execSync } = require('child_process');
 
 const lock = require('../package-lock.json');
+// The Phase 0 sql-graph prototype lock resolved the Postgres client + embedded
+// Postgres server closure. The app needs those at the root, and the root lock
+// has no entries for them, so they are installed from this second source.
+const pgLock = require('../prototypes/sql-graph/package-lock.json');
 
-// ── 1. Compute reachable closure from the 5 real roots ──────────────────────
-const roots = ['@babel/parser', '@babel/traverse', '@types/babel__traverse', '@types/node', 'typescript'];
+// Application lock wins for any name present in both.
+const packages = { ...pgLock.packages, ...lock.packages };
+
+// ── 1. Compute reachable closure from the real roots ────────────────────────
+// `@embedded-postgres/<platform>` is an optionalDependency holding the actual
+// Postgres binaries; it is not reachable via `dependencies`, so it is an
+// explicit root for the host platform.
+const embeddedPlatform = `@embedded-postgres/${
+  process.platform === 'win32' ? 'windows' : process.platform
+}-${process.arch}`;
+
+const roots = [
+  '@babel/parser',
+  '@babel/traverse',
+  '@types/babel__traverse',
+  '@types/node',
+  '@types/pg',
+  'typescript',
+  'pg',
+  'embedded-postgres',
+  embeddedPlatform,
+];
 const reach = new Set(roots);
 const queue = [...roots];
 while (queue.length) {
   const name = queue.shift();
-  const entry = lock.packages['node_modules/' + name];
+  const entry = packages['node_modules/' + name];
   if (!entry) continue;
   for (const dep of Object.keys(entry.dependencies || {})) {
     if (!reach.has(dep)) { reach.add(dep); queue.push(dep); }
@@ -35,7 +59,7 @@ while (queue.length) {
 // Keep only reachable entries that have a tarball URL.
 // ponytail: nested-node_modules instances (version conflicts) are ignored —
 // only onnxruntime-web nests one, and it is outside the reachable closure.
-const targets = Object.entries(lock.packages)
+const targets = Object.entries(packages)
   .filter(([k, v]) => v && v.resolved && reach.has(k.replace(/^node_modules\//, '')))
   .map(([k, v]) => ({ key: k.replace(/^node_modules\//, ''), url: v.resolved }));
 
@@ -107,6 +131,11 @@ try {
   require('../node_modules/@babel/parser'); console.log('@babel/parser: OK');
   require('../node_modules/@babel/traverse'); console.log('@babel/traverse: OK');
   require('../node_modules/typescript'); console.log('typescript: OK');
+  require('../node_modules/pg'); console.log('pg: OK');
+  // By package name, not by path: the package has only an `exports` map (no
+  // `main`), so a path require would look for a non-existent index.js.
+  const ep = require('embedded-postgres');
+  console.log('embedded-postgres: OK', ep && ep.default ? '(esm default)' : '(cjs)');
 } catch (err) {
   console.log('load test failed:', err.message);
 }

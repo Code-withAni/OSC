@@ -13,15 +13,15 @@
 
 ## Phase 1 — Repository Ingestion
 
-- [ ] Accept public GitHub repository URL
-- [ ] Validate repository
-- [ ] Fetch repository metadata
-- [ ] Create analysis job model
-- [ ] Safely retrieve repository source
-- [ ] Discover repository files
-- [ ] Classify files
-- [ ] Detect JavaScript/TypeScript
-- [ ] Persist repository snapshot and commit SHA
+- [x] Accept public GitHub repository URL
+- [x] Validate repository
+- [x] Fetch repository metadata
+- [x] Create analysis job model
+- [x] Safely retrieve repository source
+- [x] Discover repository files
+- [x] Classify files
+- [x] Detect JavaScript/TypeScript
+- [x] Persist repository snapshot and commit SHA
 
 ## Phase 2 — Code Intelligence
 
